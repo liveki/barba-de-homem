@@ -49,4 +49,4 @@ yarn start
 ```
 
 ### Tela inicial do app:
-![Imgur](https://i.imgur.com/Ywe2OjV.png)
+![Imgur](https://i.imgur.com/GZjKd9m.png)
