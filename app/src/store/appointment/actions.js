@@ -1,4 +1,4 @@
-import { isBefore } from 'date-fns';
+import { isBefore, differenceInHours } from 'date-fns';
 import { firestore } from '../../plugins/firebase';
 import { RECEIVE_APPOINTMENTS } from './actionTypes';
 
@@ -73,6 +73,12 @@ export const registerAppointment = appointment => {
     if (isBefore(parsedDate, Date.now())) {
       throw new Error(
         'Você não pode criar um atendimento com uma data passada.'
+      );
+    }
+
+    if (differenceInHours(parsedDate, Date.now()) < 24) {
+      throw new Error(
+        'O horário de atendimento deve ser com 24h de antecedência.'
       );
     }
 
