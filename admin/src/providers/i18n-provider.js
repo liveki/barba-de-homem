@@ -27,6 +27,7 @@ const messages = {
             district: 'Bairro',
             number: 'Número',
             complement: 'Complemento',
+            CEP: 'CEP',
           },
         },
       },
