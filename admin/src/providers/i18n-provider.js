@@ -54,6 +54,7 @@ const messages = {
           description: 'Descrição',
           duration: 'Duração',
           titleService: 'Titulo do serviço',
+          status: 'Situação',
         },
       },
     },
