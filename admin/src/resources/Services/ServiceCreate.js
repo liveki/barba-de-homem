@@ -6,9 +6,21 @@ import {
     NumberInput,
     FormTab,
     TabbedForm,
+    SelectInput
 } from 'react-admin';
 
 import './styles.css';
+
+const statusOptions = [
+  {
+      id: 'ATIVO',
+      name: "Ativo",
+  },
+  {
+      id: 'INATIVO',
+      name: "Inativo",
+  },
+]
 
 const ServiceCreate = props => {
     return (
@@ -19,6 +31,10 @@ const ServiceCreate = props => {
                     <TextInput source="description" />
                     <NumberInput source="cost" />
                     <NumberInput source="duration" />
+                    <SelectInput source="status" 
+                        choices={statusOptions}
+                        initialValue={statusOptions[0].id}
+                    />
                 </FormTab>
 
             </TabbedForm>
