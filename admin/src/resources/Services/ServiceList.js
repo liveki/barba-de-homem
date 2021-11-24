@@ -11,12 +11,26 @@ import {
 
 import './styles.css';
 
+
+
+const ListActions = (props) => {
+  const { className, basePath } = props;
+  return (
+    <TopToolbar className={className}>
+      <ImportButton {...props} {...config}/>
+      <CreateButton {...props} />
+      <ExportButton {...props} />
+    </TopToolbar>
+  );
+};
+
 export const ServiceList = props => {
   return (
     <List
       {...props}
       bulkActionButtons={false}
       className="service-list"
+      actions={<ListActions />}
     >
       <Datagrid>
         <TextField source="titleService" />
