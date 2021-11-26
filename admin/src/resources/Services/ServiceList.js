@@ -7,11 +7,21 @@ import {
   NumberField,
   EmailField,
   EditButton,
+  TopToolbar,
+  CreateButton,
+  ExportButton,
 } from 'react-admin';
 
+import { ImportButton } from "react-admin-import-csv";
 import './styles.css';
 
-
+const config = {
+  
+  // A function to translate the CSV rows on import
+  preCommitCallback: (csvRowItem) => {
+    console.log(csvRowItem)
+  }
+}
 
 const ListActions = (props) => {
   const { className, basePath } = props;
