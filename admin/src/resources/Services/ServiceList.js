@@ -11,9 +11,17 @@ import {
   CreateButton,
   ExportButton,
 } from 'react-admin';
-
+import { dataProvider } from '../../providers/firebase-provider';
 import { ImportButton } from "react-admin-import-csv";
 import './styles.css';
+
+// Must be react-admin 3.x
+const dataProviderWrapped = {
+  ...dataProvider,// = {dataProvider}, //...dataProvider, // <- Your data provider
+  createMany: async (resource, params) => {
+    const items = params.data;
+  }
+}
 
 const config = {
   
@@ -27,12 +35,13 @@ const ListActions = (props) => {
   const { className, basePath } = props;
   return (
     <TopToolbar className={className}>
-      <ImportButton {...props} {...config}/>
+      <ImportButton {...props} {...config} {...dataProviderWrapped}/>
       <CreateButton {...props} />
       <ExportButton {...props} />
     </TopToolbar>
   );
 };
+
 
 export const ServiceList = props => {
   return (
