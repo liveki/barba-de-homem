@@ -17,7 +17,7 @@ import './styles.css';
 
 // Must be react-admin 3.x
 const dataProviderWrapped = {
-  ...dataProvider,// = {dataProvider}, //...dataProvider, // <- Your data provider
+  ...dataProvider,
   createMany: async (resource, params) => {
     const items = params.data;
   }
