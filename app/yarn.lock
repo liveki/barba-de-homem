@@ -8909,9 +8909,9 @@ mixin-object@^2.0.1:
     minimist "^1.2.5"
 
 moment@^2.24.0, moment@^2.25.3:
-  version "2.26.0"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.26.0.tgz#5e1f82c6bafca6e83e808b30c8705eed0dcbd39a"
-  integrity sha512-oIixUO+OamkUkwjhAVE18rAMfRJNsNe/Stid/gwHSOfHrOtw9EhAY2AHvdKZ/k/MggcYELFCJz/Sn2pL8b8JMw==
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 morgan@^1.10.0, morgan@^1.8.2:
   version "1.10.0"
@@ -12790,10 +12790,12 @@ svgo@^1.0.0, svgo@^1.2.2:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
 sweetalert2@^9.15.1:
   version "9.15.1"
   resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-9.15.1.tgz#d0c2da861a1945626c9c145b48611c1bf0f68ba9"
   integrity sha512-RQiw9kPSyH2VUx+B6ShdFwJBeyztLZd66d8QhhdgSnqm1KO2gGy81fTkVYY5JSYvZSt+KwG0fAxmCwfyW82RZQ==
+
 symbol-observable@^1.0.2, symbol-observable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
